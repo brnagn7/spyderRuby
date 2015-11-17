@@ -36,8 +36,7 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/javascripts/html5.js"></script>
 <![endif]-->
-  <%= javascript_include_tag :all %>
-  <%= yield(:head) %>
+
 </head>
 <body id="page1" onload="new ElementMaxHeight();">
 <div class="tail-top">
@@ -252,7 +251,12 @@
 									</ul>
 								</div>
 							</form>
-
+					<div class="box col-4 maxheight">
+													<div class="inner">
+<h1>Rails Blog Posts</h1>
+<%= link_to 'My Blog', controller: 'articles' %>
+</div>
+												</div>
 							<h2>Your Domain Name Helps the World  to Find You</h2>
 							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
 							<p>Voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
